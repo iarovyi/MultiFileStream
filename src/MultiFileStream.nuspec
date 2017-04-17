@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+ <package>
+   <metadata>
+	 <id>MultiFileStream</id>
+	 <version>0.0.0.0</version>
+	 <title>MultiFileStream</title>
+	 <authors>Sergii Iarovyi</authors>
+	 <owners>Sergii Iarovyi</owners>
+	 <licenseUrl>https://raw.githubusercontent.com/iarovyi/MultiFileStream/master/LICENSE</licenseUrl>
+	 <projectUrl>https://github.com/iarovyi/MultiFileStream</projectUrl>
+	 <iconUrl>https://raw.githubusercontent.com/iarovyi/MultiFileStream/master/docs/img/icon.png</iconUrl>
+	 <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	 <description>Easy way to tream multiple files as one while reading or writing</description>
+	 <releaseNotes>First version</releaseNotes>
+	 <copyright>Copyright 2017</copyright>
+	 <tags>Stream</tags>
+	 <!--Files will be injected in build script<files/>-->
+   </metadata>
+ </package>
