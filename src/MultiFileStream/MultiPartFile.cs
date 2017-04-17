@@ -91,7 +91,7 @@
             private const string ExtensionGroupName = "extension";
             private static readonly Regex FileNameRegex = new Regex($@"^(?<{PrefixGroupName}>.*?)" +
                                                                     $@"(\.part(?<{FileNumberGroupName}>\d+)((\s)?of(\s)?(?<{MaxFilesGroupName}>\d+))?)?" +
-                                                                    $@"(\.(?<{ExtensionGroupName}>\w{3}))?$");
+                                                                    $@"(\.(?<{ExtensionGroupName}>\w{{3}}))?$");
 
             private readonly Match match;
             private readonly FileInfo fileInfo;
