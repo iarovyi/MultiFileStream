@@ -60,6 +60,16 @@
             }
         }
 
+        public static IReadOnlyList<string> SplitFile(string iputFile, string mainOutputFilePath, long perFileLenghtInBytes)
+        {
+            using (FileStream inputStream = File.Open(iputFile, FileMode.Open))
+            using (MultiPartFileStream multiFileStream = Create(mainOutputFilePath, perFileLenghtInBytes))
+            {
+                inputStream.CopyTo(multiFileStream);
+                return multiFileStream.Files;
+            }
+        }
+
         private FileStream OpenWriteNextFile()
         {
             bool isWriting = !lastWrittenFile.Equals(default(PartFileInfo));
